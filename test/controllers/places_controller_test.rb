@@ -12,7 +12,7 @@ class PlacesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create place" do
     assert_difference('Place.count') do
-      post places_url, params: { place: { google_id: @place.google_id, group_size: @place.group_size, wait_time: @place.wait_time } }, as: :json
+      post places_url, params: { place: { google_id: 'newPlaceId', group_size: @place.group_size, time_of_day: @place.time_of_day, wait_time: @place.wait_time } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class PlacesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update place" do
-    patch place_url(@place), params: { place: { google_id: @place.google_id, group_size: @place.group_size, wait_time: @place.wait_time } }, as: :json
+    patch place_url(@place), params: { place: { google_id: @place.google_id, group_size: @place.group_size, time_of_day: @place.time_of_day, wait_time: @place.wait_time } }, as: :json
     assert_response 200
   end
 

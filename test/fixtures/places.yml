@@ -3,9 +3,11 @@
 one:
   google_id: MyString
   group_size: 1
-  wait_time: 5
+  wait_time: 1.5
+  time_of_day: "12:00"
 
 two:
   google_id: MyString
   group_size: 2
-  wait_time: 10.5
+  wait_time: 1.5
+  time_of_day: "12:05"
