@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  google_id: MyString
+  group_size: 1
+  wait_time: 5
+
+two:
+  google_id: MyString
+  group_size: 2
+  wait_time: 10.5
